@@ -13,7 +13,7 @@ const theme = {
 
 export default function Main() {
   return (
-      <PaperProvider>
+      <PaperProvider theme={theme}>
         <App />
       </PaperProvider>
   );
