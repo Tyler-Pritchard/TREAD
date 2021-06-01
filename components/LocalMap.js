@@ -29,7 +29,7 @@ const LocalMap = () => {
           latitude: 37.797154,
           longitude: -122.204921,
           latitudeDelta: 0.0622,
-          longitudeDelta: 0.0121,
+          longitudeDelta: 0.0122,
         }
       }/>
 
