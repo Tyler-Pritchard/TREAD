@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Main from './components/Main';
+import { StyleSheet, View } from 'react-native';
+import LocalMap from './components/LocalMap';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Main />
+      <LocalMap />
     </View>
   );
 }
@@ -17,3 +17,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 40 },
 });
+
+export default App;
