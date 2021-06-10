@@ -1,11 +1,11 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import LocalMap from "../../components/LocalMap";
+import MapView from "./index.js";
 
 it ('renders default elements', () => {
-    const { getAllByText } = render(<LocalMap />);
+    const { getAllByText } = render(<MapView />);
 
-    getAllByText('LocalMap').length
+    getAllByText('MapView').length(); 
 
 })
 
