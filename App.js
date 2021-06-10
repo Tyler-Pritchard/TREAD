@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import LocalMap from './components/LocalMap';
+import LocalMap from './screens/LocalMap';
 
 const App = () => {
   return (
