@@ -4,3 +4,7 @@
 // <View styles={[ globalStyles.wrapper, styles.textWrap ]}>
 // …
 // </View>
+import styles from './styles';
+import theme from './themes';
+
+export {styles, theme};

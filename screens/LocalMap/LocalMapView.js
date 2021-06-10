@@ -1,6 +1,7 @@
 import React from 'react';
-import {StyleSheet, View, Text, Dimensions} from 'react-native';
+import { View, Text } from 'react-native';
 import { Searchbar } from 'react-native-paper';
+import styles from './styles';
 import {GOOGLE_API_KEY} from '../../config';
 
 import MapView from 'react-native-maps';
@@ -18,7 +19,7 @@ const LocalMap = () => {
   return (
     <View style={styles.container}>
 
-      <Text style={styles.text}>Welcome to Oakland bitch</Text>
+      <Text style={styles.text}>Welcome to Oakland</Text>
 
       <Searchbar
         placeholder="Search"
@@ -49,29 +50,4 @@ const LocalMap = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'black',
-    borderWidth: 2
-  },
-  maps: {
-    width: Dimensions.get('screen').width,
-    height: Dimensions.get('screen').height,
-  },
-  text: {
-    margin: 5,
-    textAlign: 'center',
-    fontSize: 18,
-    backgroundColor: 'green',
-    color: 'yellow',
-    padding: 10,
-    width: Dimensions.get('screen').width
-  },
-  search: {
-    margin: 5,
-    height: 50,
-    width: Dimensions.get('screen').width
-  }
-});
 export default LocalMap;
