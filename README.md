@@ -1,1 +1,1 @@
-<img>assets/images/Screen Shot 2021-06-12 at 1.40.09 PM.png</img>
+<img assets/images/Screen Shot 2021-06-12 at 1.40.09 PM.png />
