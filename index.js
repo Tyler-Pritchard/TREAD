@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Provider as PaperProvider } from 'react-native-paper';
-import theme from './styles';
+import {theme} from './styles/index';
 import App from './App';
 
 export default function Main() {

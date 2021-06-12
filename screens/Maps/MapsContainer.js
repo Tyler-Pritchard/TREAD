@@ -1,13 +1,15 @@
 import React from 'react';
 import {View} from 'react-native';
+import HeatMap from './HeatMapView';
 import LocalMapView from './LocalMapView';
 
-function MapView(props) {
+function Maps() {
     return (
         <View>
             <LocalMapView />
+            <HeatMap />
         </View>
     );
 } 
 
-export default MapView;
+export default Maps;
