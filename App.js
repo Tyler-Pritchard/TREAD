@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import LocalMap from './screens/LocalMap';
+import Maps from './screens/Maps';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <LocalMap />
+      <Maps />
     </View>
   );
 }

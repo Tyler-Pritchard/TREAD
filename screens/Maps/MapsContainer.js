@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import LocalMapView from './LocalMapView';
 
-function MapView(props) {
+function Maps(props) {
     return (
         <View>
             <LocalMapView />
@@ -10,4 +10,4 @@ function MapView(props) {
     );
 } 
 
-export default MapView;
+export default Maps;

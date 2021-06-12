@@ -2,9 +2,9 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-const MapViewNavigator = createStackNavigator(
+const MapsNavigator = createStackNavigator(
     {
-        MapView: { screen: MapView }
+        Maps: { screen: Maps }
     },
     {
         defaultNavigationOptions: ({navigation}) => ({

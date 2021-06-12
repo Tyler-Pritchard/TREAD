@@ -1,11 +1,11 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import MapView from "./index.js";
+import Maps from "./index.js";
 
 it ('renders default elements', () => {
-    const { getAllByText } = render(<MapView />);
+    const { getAllByText } = render(<Maps />);
 
-    getAllByText('MapView').length(); 
+    getAllByText('Maps').length(); 
 
 })
 
