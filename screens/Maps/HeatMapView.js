@@ -6,15 +6,15 @@ export default () => (
   <Heatmap
     WebView={WebView}
     region={{
-      latitude: 37.797154, 
+      latitude: 37.797187, 
       longitude: -122.204921,
-      latitudeDelta: 0.0622,
-      longitudeDelta: 0.0122,
+      latitudeDelta: 0.0625,
+      longitudeDelta: 0.0125,
     }}
     data={[
       [
-        -122.204921, // longitude
-        37.797154, // latitude
+        -122.205930, // longitude
+        37.805254, // latitude
         10, // intensity
       ],
     ]}
