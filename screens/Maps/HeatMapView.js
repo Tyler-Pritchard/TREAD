@@ -1,23 +1,22 @@
-import HeatMap from 'react-native-heat-map';
- 
+import React from 'react';
+import WebView from 'react-native-webview';
+import Heatmap from 'react-native-simpleheat';
+
 export default () => (
-  <HeatMap
-    pointerEvents="box-only"
-    style={{
-      flex: 1,
+  <Heatmap
+    WebView={WebView}
+    region={{
+      latitude: 37.797154, 
+      longitude: -122.204921,
+      latitudeDelta: 0.0622,
+      longitudeDelta: 0.0122,
     }}
     data={[
       [
-        -3.0118499, // longitude
-        53.4139281, // latitude
-        20   // intensity
+        -122.204921, // longitude
+        37.797154, // latitude
+        10, // intensity
       ],
     ]}
-    region={{
-      longitude: -3.0118499,
-      latitude: 53.4139281,
-      latitudeDelta: 0.2,
-      longitudeDelta: 0.2,
-    }}
   />
 );

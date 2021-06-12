@@ -1,3 +1,6 @@
+import * as React from 'react';
+import { DefaultTheme } from 'react-native-paper';
+
 const theme = {
     ...DefaultTheme,
     colors: {
