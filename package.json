@@ -55,5 +55,43 @@
     "testEnvironmentOptions": {
       "enzymeAdapter": "react17"
     }
+  },
+  "detox": {
+    "testRunner": "jest",
+    "runnerConfig": "e2e/config.json",
+    "apps": {
+      "ios": {
+        "type": "ios.app",
+        "binaryPath": "node_modules/expo/AppEntry.js"
+      },
+      "android": {
+        "type": "android.apk",
+        "binaryPath": "node_modules/expo/AppEntry.js"
+      }
+    },
+    "devices": {
+      "simulator": {
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11"
+        }
+      },
+      "emulator": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_3a_API_30_x86"
+        }
+      }
+    },
+    "configurations": {
+      "ios": {
+        "device": "simulator",
+        "app": "ios"
+      },
+      "android": {
+        "device": "emulator",
+        "app": "android"
+      }
+    }
   }
 }
