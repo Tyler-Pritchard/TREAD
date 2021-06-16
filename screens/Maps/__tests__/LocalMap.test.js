@@ -1,11 +1,20 @@
+import { render } from '@testing-library/react-native';
+import Maps from '../index';
 
-test.only('this will be the only test that runs', () => {
-    expect(true).toBe(true);
-  });
+test('should verify container renders', () => {
+    const {queryMaps} = render(<Maps {...props} />);
+    const containerView = queryMaps('View');
+
+    expect(viewContainer).toHaveLength(2)
+});
+
+// test.only('FIRST TEST THAT RUNS', () => {
+//     expect(true).toBe(true);
+//   });
   
-  test('this test will not run', () => {
-    expect('A').toBe('A');
-  });
+//   test('LAST TEST WILL NOT RUN', () => {
+//     expect('A').toBe('A');
+//   });
 
 
 
