@@ -12,7 +12,11 @@ const LocalMap = () => {
   const destination = {latitude: 37.805570, longitude: -122.274335}
 
   return (
-    <View style={styles.container}>
+    <View 
+      style={styles.container}
+      //TODO  Check accessibility features
+      accessible={true}  
+    >
 
       <Text style={styles.text}>Welcome to Oakland</Text>
       <MapQuery />
