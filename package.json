@@ -14,6 +14,7 @@
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.7",
+    "detox": "^18.17.0",
     "expo": "~41.0.1",
     "expo-status-bar": "~1.0.4",
     "react": "17.0.2",
@@ -29,6 +30,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/preset-typescript": "^7.14.5",
     "@babel/runtime": "^7.4.4",
     "@testing-library/jest-native": "^4.0.1",
     "@testing-library/react-native": "^7.2.0",
@@ -52,6 +54,44 @@
     "testEnvironment": "enzyme",
     "testEnvironmentOptions": {
       "enzymeAdapter": "react17"
+    }
+  },
+  "detox": {
+    "testRunner": "jest",
+    "runnerConfig": "e2e/config.json",
+    "apps": {
+      "ios": {
+        "type": "ios.app",
+        "binaryPath": "node_modules/expo/AppEntry.js"
+      },
+      "android": {
+        "type": "android.apk",
+        "binaryPath": "node_modules/expo/AppEntry.js"
+      }
+    },
+    "devices": {
+      "simulator": {
+        "type": "ios.simulator",
+        "device": {
+          "type": "iPhone 11"
+        }
+      },
+      "emulator": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_3a_API_30_x86"
+        }
+      }
+    },
+    "configurations": {
+      "ios": {
+        "device": "simulator",
+        "app": "ios"
+      },
+      "android": {
+        "device": "emulator",
+        "app": "android"
+      }
     }
   }
 }
