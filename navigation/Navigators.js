@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-//change to bottom tab
-import {createDrawerNavigator} from '@react-navigation/drawer';
-import { Drawer } from 'react-native-paper';
+import React from 'react';
 import {MapsNavigator, LoginNavigator} from './ROUTES';
 import Login from '../screens/Login';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-const MainDrawer = createDrawerNavigator();
+const Tab = createBottomTabNavigator();
 
-function MainDrawer() {
-    return (
-        <Drawer.Navigator>
-            <Drawer.Screen name="Maps" component={Maps} />
-            <Drawer.Screen name="Login" component={Login} />
-        </Drawer.Navigator>
-    )
+export function MainTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Maps" component={MapsNavigator} />
+      <Tab.Screen name="Login" component={LoginNavigator} />
+    </Tab.Navigator>
+  );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { MainTabs } from './navigation/Navigators';
 import Maps from './screens/Maps';
 
 const App = () => {

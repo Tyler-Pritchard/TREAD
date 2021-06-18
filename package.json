@@ -10,6 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^5.11.11",
+    "@react-navigation/native": "^6.0.0-next.13",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.11",
@@ -22,6 +24,7 @@
     "react-native-maps": "0.27.1",
     "react-native-maps-directions": "^1.8.0",
     "react-native-paper": "^4.9.1",
+    "react-native-screens": "^3.4.0",
     "react-native-simpleheat": "^0.0.4",
     "react-native-vector-icons": "^8.1.0",
     "react-native-web": "~0.13.12",
