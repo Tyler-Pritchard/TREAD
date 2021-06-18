@@ -1,12 +1,17 @@
-import { render } from '@testing-library/react-native';
+import React from 'react';
+import {shallow} from 'enzyme';
 import Maps from '../index';
 
-test('should verify container renders', () => {
-    const {queryMaps} = render(<Maps {...props} />);
-    const containerView = queryMaps('View');
 
-    expect(viewContainer).toHaveLength(2)
+describe('Maps', () => {
+    describe('Rendering', () => {
+        it('should match to snapshot', () => {
+            const component = shallow(<Maps label="test label"/>)
+            expect(component).toMatchSnapshot()
+        });
+    });
 });
+
 
 // test.only('FIRST TEST THAT RUNS', () => {
 //     expect(true).toBe(true);
