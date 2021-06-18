@@ -2,9 +2,9 @@ TN:
 SF:config.js
 FNF:0
 FNH:0
-DA:1,1
-DA:2,1
-DA:3,1
+DA:1,2
+DA:2,2
+DA:3,2
 LF:3
 LH:3
 BRF:0
@@ -14,11 +14,11 @@ TN:
 SF:screens/Maps/HeatMapView.js
 FN:5,(anonymous_0)
 FNF:1
-FNH:0
-FNDA:0,(anonymous_0)
-DA:6,0
+FNH:1
+FNDA:1,(anonymous_0)
+DA:6,1
 LF:1
-LH:0
+LH:1
 BRF:0
 BRH:0
 end_of_record
@@ -28,7 +28,7 @@ FN:9,(anonymous_0)
 FNF:1
 FNH:0
 FNDA:0,(anonymous_0)
-DA:9,1
+DA:9,2
 DA:11,0
 DA:12,0
 DA:14,0
@@ -42,8 +42,8 @@ SF:screens/Maps/MapsContainer.js
 FN:6,Maps
 FNF:1
 FNH:1
-FNDA:1,Maps
-DA:7,1
+FNDA:2,Maps
+DA:7,2
 LF:1
 LH:1
 BRF:0
@@ -62,7 +62,7 @@ TN:
 SF:screens/Maps/styles.js
 FNF:0
 FNH:0
-DA:3,1
+DA:3,2
 LF:1
 LH:1
 BRF:0
@@ -76,7 +76,7 @@ FNF:2
 FNH:0
 FNDA:0,(anonymous_0)
 FNDA:0,(anonymous_1)
-DA:7,1
+DA:7,2
 DA:9,0
 DA:11,0
 DA:13,0
