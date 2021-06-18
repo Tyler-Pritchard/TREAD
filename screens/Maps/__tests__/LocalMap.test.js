@@ -1,12 +1,12 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Maps from '../index';
+import LocalMap from '../LocalMapView';
 
 
-describe('Maps', () => {
+describe('LocalMap', () => {
     describe('Rendering', () => {
         it('should match to snapshot', () => {
-            const component = shallow(<Maps label="test label"/>)
+            const component = shallow(<LocalMap label="test label"/>)
             expect(component).toMatchSnapshot()
         });
     });
@@ -28,9 +28,3 @@ describe('Maps', () => {
 //it handles valid input submission
 //it renders marker2
 //it renders polyline
-
-// Given - some precondition
-// When - some action executed by the function that you’re testing
-// Then - the expected outcome
-
-//Add detox later for e2e and device simulation testing
