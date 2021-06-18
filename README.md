@@ -4,3 +4,12 @@ This application is intended to be used by pedestrians in order to circumvent ar
 
 
 Future features will include Apple Watch functionality and an alerting system.
+
+Snapshot tests:
+yarn test
+
+Watch all tests:
+yarn test --watchAll
+
+Update snapshot:
+yarn test -- -u
