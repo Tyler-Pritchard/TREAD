@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import styles from './styles';
 import {GOOGLE_API_KEY} from '../../config';
-import { MapQuery } from '../components/SearchBar';
+import { MapQuery } from '../../ components/SearchBar/SearchBar';
 import MapView from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 

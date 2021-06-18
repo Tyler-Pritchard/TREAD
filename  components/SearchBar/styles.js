@@ -6,10 +6,6 @@ const styles = StyleSheet.create({
       backgroundColor: 'black',
       borderWidth: 2
     },
-    maps: {
-      width: Dimensions.get('screen').width,
-      height: Dimensions.get('screen').height,
-    },
     text: {
       margin: 5,
       textAlign: 'center',
@@ -17,6 +13,11 @@ const styles = StyleSheet.create({
       backgroundColor: 'green',
       color: 'yellow',
       padding: 10,
+      width: Dimensions.get('screen').width
+    },
+    search: {
+      margin: 5,
+      height: 50,
       width: Dimensions.get('screen').width
     }
   });
