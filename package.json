@@ -62,11 +62,11 @@
     "apps": {
       "ios": {
         "type": "ios.app",
-        "binaryPath": "node_modules/expo/AppEntry.js"
+        "binaryPath": ""
       },
       "android": {
         "type": "android.apk",
-        "binaryPath": "node_modules/expo/AppEntry.js"
+        "binaryPath": ""
       }
     },
     "devices": {
