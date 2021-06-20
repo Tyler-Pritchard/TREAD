@@ -4,9 +4,9 @@ import {theme} from './styles/index';
 import App from './App';
 
 export default function Main() {
-  return (
-      <PaperProvider theme={theme}>
-        <App />
-      </PaperProvider>
+  return (  
+    <PaperProvider theme={theme}>
+      <App />
+    </PaperProvider>
   );
 }

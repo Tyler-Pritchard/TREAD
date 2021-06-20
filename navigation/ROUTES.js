@@ -1,15 +1,18 @@
-import React from 'react';
-import Maps from '../screens/Maps';
-import Login from '../screens/Login';
+// import React from 'react';
+// import Maps from '../screens/Maps';
+// import Login from '../screens/Login';
+// import { createStackNavigator } from '@react-navigation/stack';
 
-const MapsNavigator = createBottomTabNavigator(
-    {
-        Maps: { screen: Maps }
-    }
-);
+// const Stack = createStackNavigator();
 
-const LoginNavigator = createStackNavigator(
-    {
-        Login: { screen: Login }
-    }
-);
+// export const MapsNavigator = createStackNavigator(
+//     {
+//         Maps: { screen: Maps }
+//     }
+// );
+
+// export const LoginNavigator = createStackNavigator(
+//     {
+//         Login: { screen: Login }
+//     }
+// );

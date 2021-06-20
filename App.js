@@ -1,22 +1,14 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { MainTabs } from './navigation/Navigators';
-import Maps from './screens/Maps';
+import MainTabs from './navigation/Navigators';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Maps />
-    </View>
+    <NavigationContainer>
+      <MainTabs />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    marginTop: 40 },
-});
 
 export default App;
