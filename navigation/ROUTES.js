@@ -1,49 +1,18 @@
-//consists of all the constants for various available routes within our app
-import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
+// import React from 'react';
+// import Maps from '../screens/Maps';
+// import Login from '../screens/Login';
+// import { createStackNavigator } from '@react-navigation/stack';
 
-const MapsNavigator = createStackNavigator(
-    {
-        Maps: { screen: Maps }
-    },
-    {
-        defaultNavigationOptions: ({navigation}) => ({
-            headerStyle: {
-                backgroundColor: '#5637DD'
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                color: '#fff'
-            },
-            headerLeft: <Icon
-                name='sign-in'
-                type='font-awesome'
-                iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
-        })
-    }
-);
+// const Stack = createStackNavigator();
 
-const LoginNavigator = createStackNavigator(
-    {
-        Login: { screen: Login }
-    },
-    {
-        defaultNavigationOptions: ({navigation}) => ({
-            headerStyle: {
-                backgroundColor: '#5637DD'
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                color: '#fff'
-            },
-            headerLeft: <Icon
-                name='sign-in'
-                type='font-awesome'
-                iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
-        })
-    }
-);
+// export const MapsNavigator = createStackNavigator(
+//     {
+//         Maps: { screen: Maps }
+//     }
+// );
+
+// export const LoginNavigator = createStackNavigator(
+//     {
+//         Login: { screen: Login }
+//     }
+// );
