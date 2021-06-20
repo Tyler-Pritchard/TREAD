@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
       borderWidth: 2
     },
     maps: {
+      flex: 1,
       width: Dimensions.get('screen').width,
       height: Dimensions.get('screen').height,
     },
@@ -18,6 +19,11 @@ const styles = StyleSheet.create({
       color: 'yellow',
       padding: 10,
       width: Dimensions.get('screen').width
+    },
+    heatmap: {
+      flex: 1,
+      position: 'absolute',
+      zIndex: 20
     }
   });
 
