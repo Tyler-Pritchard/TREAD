@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
       margin: 5,
       height: 50,
       width: Dimensions.get('screen').width,
-      zIndex: 100
+      borderWidth: 2,
+      borderColor: "yellow"
     }
   });
 

@@ -4,12 +4,15 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: 'black',
-      borderWidth: 2
+      borderWidth: 2,
+      borderColor: 'red'
     },
     maps: {
       flex: 1,
       width: Dimensions.get('screen').width,
       height: Dimensions.get('screen').height,
+      borderWidth: 2,
+      borderColor: 'purple'
     },
     text: {
       margin: 5,
@@ -23,7 +26,8 @@ const styles = StyleSheet.create({
     heatmap: {
       flex: 1,
       position: 'absolute',
-      zIndex: 20
+      borderWidth: 2,
+      borderColor: "orangered"
     }
   });
 
