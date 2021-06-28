@@ -1,9 +1,13 @@
 import React from 'react';
 import WebView from 'react-native-webview';
 import Heatmap from 'react-native-simpleheat';
+import styles from './styles';
 
 export default () => (
+
+
   <Heatmap
+    style={styles.heatmap}
     WebView={WebView}
     region={{
       latitude: 37.797187, 

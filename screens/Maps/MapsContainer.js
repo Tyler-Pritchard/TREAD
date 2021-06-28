@@ -6,8 +6,8 @@ import LocalMapView from './LocalMapView';
 function Maps() {
     return (
         <View>
-            <LocalMapView />
             <HeatMap />
+            <LocalMapView />
         </View>
     );
 } 

@@ -5,6 +5,8 @@ This application is intended to be used by pedestrians in order to circumvent ar
 
 Future features will include Apple Watch functionality and an alerting system.
 
+This application requires a valaid Google API key
+
 Snapshot tests:
 yarn test
 
