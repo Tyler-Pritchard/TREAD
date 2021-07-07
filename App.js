@@ -1,11 +1,13 @@
-import React from 'react';
+import * as React from 'react';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 import Navigators from './navigation/Navigators';
 
-
-
-const App = () => {
+function App() {
   return (
-    <Navigators />
+    <NavigationContainer>
+      <Navigators />
+    </NavigationContainer>
   );
 }
 
