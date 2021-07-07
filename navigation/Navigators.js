@@ -1,59 +1,59 @@
-import React from 'react';
-import {View, Text} from 'react-native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React, {Component} from 'react';
+import {View} from 'react-native';
 import Maps from '../screens/Maps';
 import Login from '../screens/Login';
+import { createAppContainer} from 'react-navigation';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import styles from '../screens/Maps/styles';
 
 const Tab = createBottomTabNavigator();
 
 function MainTabs() {
   return (
-          <Tab.Navigator
-              initialRouteName="Maps"
-              screenOptions={({ route }) => ({
-                  tabBarIcon: ({ focused, color, size }) => {
-                      let iconName;
-
-                      if (route.name === 'Maps') {
-                          iconName = focused
-                              ? 'ios-information-circle'
-                              : 'ios-information-circle-outline';
-                      } else if (route.name === 'Login') {
-                          iconName = focused ? 'ios-list-box' : 'ios-list';
-                      } else {
-
-                      // You can return any component that you like here!
-                      return (
-                        <View>
-                          <Text>Bottom Tab Placeholder</Text>
-                        </View>
-                      );
-                      }
-                  },
-              })}
-              tabBarOptions={{
-                  activeTintColor: 'tomato',
-                  inactiveTintColor: 'gray',
-              }}
-
-          >
-              <Tab.Screen name="Maps" component={Maps} />
-              <Tab.Screen name="Login" component={Login} />
-          </Tab.Navigator>
+    <Tab.Navigator
+      initialRouteName="Maps"
+      tabBarOptions={{
+        activeTintColor: '#e91e63',
+      }}
+    >
+      <Tab.Screen
+        name="Maps"
+        component={Maps}
+        options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Login"
+        component={Login}
+        options={{
+          tabBarLabel: 'Login',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="account" color={color} size={size} />
+          ),
+        }}
+      />
+    </Tab.Navigator>
   );
 }
 
+class Navigators extends Component {
 
-export default MainTabs;
+    render() {
+        return (
+            <View
+                style={{
+                    flex: 1, 
+                    paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight
+                }}>
+                    <MainTabs />
+            </View>
+        );
+    }
+}
 
-// export const MainTabs = function() {
-//   return (
-//     <Tab.Navigator
-//       initialRouteName="Maps"
-//       style={{position: 'absolute'}}
-//     >
-//       <Tab.Screen name="Maps" component={MapsNavigator} />
-//       <Tab.Screen name="Login" component={LoginNavigator} />
-//     </Tab.Navigator>
-//   );
-// }
+export default Navigators;
