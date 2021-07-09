@@ -1,14 +1,14 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import HeatMap from './HeatMapView';
 import LocalMapView from './LocalMapView';
 
 function Maps() {
     return (
-        <View>
+        <TouchableOpacity>
             <HeatMap />
             <LocalMapView />
-        </View>
+        </TouchableOpacity>
     );
 } 
 

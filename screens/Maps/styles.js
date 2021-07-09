@@ -14,20 +14,11 @@ const styles = StyleSheet.create({
       borderWidth: 2,
       borderColor: 'purple'
     },
-    text: {
-      margin: 5,
-      textAlign: 'center',
-      fontSize: 18,
-      backgroundColor: 'green',
-      color: 'yellow',
-      padding: 10,
-      width: Dimensions.get('screen').width
-    },
     heatmap: {
       flex: 1,
       position: 'absolute',
       borderWidth: 2,
-      borderColor: "orangered"
+      borderColor: "orangered",
     }
   });
 
