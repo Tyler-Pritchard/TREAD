@@ -11,7 +11,6 @@ const LocalMap = () => {
   const destination = {latitude: 37.805570, longitude: -122.274335}
 
   return (
-    <TouchableOpacity>
       <MapView
         style={styles.maps}
         initialRegion={{
@@ -29,7 +28,6 @@ const LocalMap = () => {
           strokeColor="hotpink"
         />
       </MapView>
-      </TouchableOpacity>
   );
 };
 
