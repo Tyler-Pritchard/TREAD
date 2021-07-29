@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 import styles from './styles';
 import {GOOGLE_API_KEY} from '../../config';
-import { MapQuery } from '../../ components/SearchBar/SearchBar';
 import MapView from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 
@@ -12,14 +11,6 @@ const LocalMap = () => {
   const destination = {latitude: 37.805570, longitude: -122.274335}
 
   return (
-    <View 
-      style={styles.container}
-      //TODO  Check accessibility features
-      accessible={true}  
-    >
-
-      <Text style={styles.text}>Welcome to Oakland</Text>
-      <MapQuery />
       <MapView
         style={styles.maps}
         initialRegion={{
@@ -37,8 +28,6 @@ const LocalMap = () => {
           strokeColor="hotpink"
         />
       </MapView>
-
-    </View>
   );
 };
 
